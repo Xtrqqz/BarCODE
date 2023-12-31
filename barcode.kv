@@ -1,0 +1,25 @@
+Interface:
+
+<Pop_up>:
+    title: "Scanne QR-Code"
+
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint: 1, 0.99
+            orientation: 'vertical'
+            ScanAnalyze:
+                id: preview
+                aspect_ratio: '16:9'
+                extracted_data: root.got_result
+
+
+
+        BoxLayout:
+            size_hint: 1, 0.01
+            MDLabel:
+                size_hint_y: None
+                height: '130dp'
+                id: ti
+
+
